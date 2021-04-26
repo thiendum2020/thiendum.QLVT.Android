@@ -20,7 +20,7 @@
             android:label="THỐNG KÊ XE" />
         <activity
             android:name=".THONGKE.ThongKeTuyenActivity"
-            android:label="THỐNG KẾ TUYẾN" />
+            android:label="THỐNG KẾ TUYẾN XE" />
         <activity
             android:name=".QLTuyen.InsertTuyenActivity"
             android:label="QUẢN LÝ TUYẾN - INSERT" />

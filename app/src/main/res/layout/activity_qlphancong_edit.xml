@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackgroundDashboard"
     android:orientation="vertical"
     tools:context=".QLPhanCong.EditPhanCongActivity">
 
@@ -18,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:text="Số phiếu"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
         <EditText
@@ -28,7 +29,7 @@
             android:background="@drawable/border_item"
             android:enabled="false"
             android:paddingLeft="10dp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -49,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:text="Mã xe"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="20sp" />
 
             <Spinner
@@ -69,7 +70,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:text="Mã tuyến"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="20sp" />
 
             <Spinner
@@ -91,7 +92,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:text="Ngày"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
         <EditText
@@ -101,7 +102,7 @@
             android:background="@drawable/border_item"
             android:inputType="date"
             android:paddingLeft="10dp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="20sp" />
     </LinearLayout>
 
@@ -116,7 +117,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:text="Xuất phát"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
         <EditText
@@ -125,7 +126,7 @@
             android:layout_height="50dp"
             android:background="@drawable/border_item"
             android:paddingLeft="10dp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="20sp" />
     </LinearLayout>
 
@@ -140,7 +141,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:text="Nơi đến"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
         <EditText
@@ -149,7 +150,7 @@
             android:layout_height="50dp"
             android:background="@drawable/border_item"
             android:paddingLeft="10dp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="20sp" />
     </LinearLayout>
 

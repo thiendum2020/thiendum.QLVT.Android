@@ -12,6 +12,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="menu">#FA5800</color>
     <color name="colorBackground">#F3F3F3</color>
-    <color name="colorBackground1">#5E5E5E</color>
+    <color name="colorBackgroundDashboard">#E11C1515</color>
+    <color name="colorActionBar">#3F4047</color>
 
 </resources>

@@ -15,6 +15,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -50,6 +51,7 @@ class Utils {
 
 public class QuanLyTuyen extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     static String MA_TUYEN = "MaTuyen", TEN_TUYEN = "TenTuyen", GIA_VE = "GiaVe";
+    private static final int DB_VERSION = 1;
     SwipeMenuListView list_DSTuyen;
     ArrayList<Tuyen> data = new ArrayList<>();
     TuyenAdapter adapter = null;
@@ -70,7 +72,8 @@ public class QuanLyTuyen extends AppCompatActivity implements NavigationView.OnN
         list_DSTuyen = findViewById(R.id.list_DSTuyen);
 
         DrawerLayout drawer = findViewById(R.id.draw_layout);
-
+        Toolbar toolbar_tuyen = findViewById(R.id.toolbar_tuyen);
+        setSupportActionBar(toolbar_tuyen);
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }

@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="50dp"
-        android:background="@drawable/border"
+        android:background="@drawable/border_item"
         android:gravity="center"
         android:text="XE"
         android:textSize="20sp" />
@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="50dp"
-        android:background="@drawable/border"
+        android:background="@drawable/border_item"
         android:gravity="center"
         android:text="TUYẾN"
         android:textSize="20sp" />
