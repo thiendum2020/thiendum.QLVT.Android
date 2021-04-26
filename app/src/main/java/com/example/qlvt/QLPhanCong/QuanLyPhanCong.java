@@ -70,8 +70,8 @@ public class QuanLyPhanCong extends AppCompatActivity implements NavigationView.
 
     public void setControl() {
         list_DSPC = findViewById(R.id.list_DSPC);
-        Toolbar toolbar_xe = findViewById(R.id.toolbar_xe);
-        setSupportActionBar(toolbar_xe);
+        Toolbar toolbar= findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         DrawerLayout drawer = findViewById(R.id.draw_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);

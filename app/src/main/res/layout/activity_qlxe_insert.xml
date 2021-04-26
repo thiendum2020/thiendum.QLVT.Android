@@ -8,6 +8,13 @@
 
     tools:context=".QLXe.InsertXeActivity">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        app:title="QUẢN LÝ XE- INSERT" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

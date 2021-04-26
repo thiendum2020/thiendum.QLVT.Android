@@ -72,8 +72,8 @@ public class QuanLyTuyen extends AppCompatActivity implements NavigationView.OnN
         list_DSTuyen = findViewById(R.id.list_DSTuyen);
 
         DrawerLayout drawer = findViewById(R.id.draw_layout);
-        Toolbar toolbar_tuyen = findViewById(R.id.toolbar_tuyen);
-        setSupportActionBar(toolbar_tuyen);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }

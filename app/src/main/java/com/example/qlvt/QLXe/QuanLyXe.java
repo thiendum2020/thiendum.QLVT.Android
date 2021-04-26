@@ -77,8 +77,8 @@ public class QuanLyXe extends AppCompatActivity implements NavigationView.OnNavi
         list_DSXe = findViewById(R.id.list_DSXe);
         img_xe = findViewById(R.id.img_xe);
         DrawerLayout drawer = findViewById(R.id.draw_layout);
-        Toolbar toolbar_xe = findViewById(R.id.toolbar_xe);
-        setSupportActionBar(toolbar_xe);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 

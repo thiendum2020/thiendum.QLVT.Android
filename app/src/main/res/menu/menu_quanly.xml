@@ -6,34 +6,40 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/dashboard"
+            android:icon="@drawable/ic_baseline_home_24"
             android:orderInCategory="100"
             android:title="DASHBOARD"
             app:showAsAction="never" />
         <item
             android:id="@+id/qlphancong"
+            android:icon="@drawable/ic_round_assignment_24"
             android:orderInCategory="100"
             android:title="@string/ql_phan_cong"
             app:showAsAction="never" />
 
         <item
             android:id="@+id/qltaixe"
+            android:icon="@drawable/ic_baseline_manage_accounts_24"
             android:orderInCategory="100"
             android:title="@string/ql_tai_xe"
             app:showAsAction="never" />
 
         <item
             android:id="@+id/qltuyen"
+            android:icon="@drawable/ic_round_earbuds_24"
             android:orderInCategory="100"
             android:title="@string/ql_tuyen_xe"
             app:showAsAction="never" />
 
         <item
             android:id="@+id/qlxe"
+            android:icon="@drawable/ic_baseline_airport_shuttle_24"
             android:orderInCategory="100"
             android:title="@string/ql_xe"
             app:showAsAction="never" />
         <item
             android:id="@+id/qltinh"
+            android:icon="@drawable/ic_baseline_pin_drop_24"
             android:orderInCategory="100"
             android:title="@string/ql_tinh"
             app:showAsAction="never" />

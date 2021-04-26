@@ -77,8 +77,8 @@ public class QuanLyTaiXe extends AppCompatActivity implements NavigationView.OnN
     private void setControl() {
         list_DSTX = findViewById(R.id.list_DSTaiXe);
         DrawerLayout drawer = findViewById(R.id.draw_layout);
-        Toolbar toolbar_taixe = findViewById(R.id.toolbar_taixe);
-        setSupportActionBar(toolbar_taixe);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
