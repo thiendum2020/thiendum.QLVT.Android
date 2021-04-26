@@ -118,13 +118,13 @@ public class QuanLyTinh extends AppCompatActivity implements NavigationView.OnNa
                                     public void onClick(DialogInterface dialog, int which) {
                                         delete(click.getMaTinh());
                                         Toast.makeText(QuanLyTinh.this, "Xóa thành công!", Toast.LENGTH_SHORT).show();
-                                        com.example.qlvt.QLTinh.Utils.delay(secs, new com.example.qlvt.QLTinh.Utils.DelayCallback() {
-                                            @Override
-                                            public void afterDelay() {
-                                                Intent intent = new Intent(QuanLyTinh.this, QuanLyTinh.class);
-                                                startActivity(intent);
-                                            }
-                                        });
+//                                        com.example.qlvt.QLTinh.Utils.delay(secs, new com.example.qlvt.QLTinh.Utils.DelayCallback() {
+//                                            @Override
+//                                            public void afterDelay() {
+//                                                Intent intent = new Intent(QuanLyTinh.this, QuanLyTinh.class);
+//                                                startActivity(intent);
+//                                            }
+//                                        });
                                     }
                                 })
                                 .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
@@ -235,6 +235,9 @@ public class QuanLyTinh extends AppCompatActivity implements NavigationView.OnNa
 
     public void delete(String maTinh) {
         TinhDatabase db = new TinhDatabase(this);
+        data.clear();
         db.delete(maTinh);
+        db.getTinh(data);
+        adapter.notifyDataSetChanged();
     }
 }
