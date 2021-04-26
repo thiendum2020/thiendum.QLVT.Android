@@ -56,7 +56,7 @@ public class EditXeActivity extends AppCompatActivity {
         editTenXe = findViewById(R.id.ten_xe);
         editNamSX = findViewById(R.id.nam_sx);
         spnTaiXe = findViewById(R.id.spin_maTX);
-        //editMaTX = findViewById(R.id.ma_tx);
+
         btn_choose_image = findViewById(R.id.btn_choose_image);
         btnSave = findViewById(R.id.btnSave);
     }
@@ -76,7 +76,7 @@ public class EditXeActivity extends AppCompatActivity {
             editTenXe.setText(bundle.getString(TEN_XE));
             setSpinerTaiXe(bundle.getString(MA_TX));
             editNamSX.setText(bundle.getString(NAM_SX));
-            //editMaTX.setText(bundle.getString(MA_TX));
+
             Bitmap bitmap = BitmapFactory.decodeByteArray(bundle.getByteArray(IMG), 0, bundle.getByteArray(IMG).length);
             btn_choose_image.setImageBitmap(bitmap);
 
@@ -104,7 +104,7 @@ public class EditXeActivity extends AppCompatActivity {
                             startActivity(intent);
                         }
                     });
-                    //Toast.makeText(UpdateDeleteActivity.this, "Sửa thành công", Toast.LENGTH_SHORT).show();
+
                 } else {
                     Snackbar.make(v, "Chưa nhập thông tin!", Snackbar.LENGTH_SHORT).setAction(null, null).show();
                 }
@@ -146,7 +146,7 @@ public class EditXeActivity extends AppCompatActivity {
                 InputStream inputStream = getContentResolver().openInputStream(uri);
                 Bitmap decodeStream = BitmapFactory.decodeStream(inputStream);
                 btn_choose_image.setImageBitmap(decodeStream);
-                Log.e("xxx", "" + btn_choose_image);
+
             } catch (FileNotFoundException e) {
                 Log.e("ex", e.getMessage());
             }

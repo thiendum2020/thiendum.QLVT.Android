@@ -57,7 +57,7 @@ public class InsertXeActivity extends AppCompatActivity {
         spn_maTX = findViewById(R.id.spin_maTX);
         btn_choose_image = findViewById(R.id.btn_choose_image);
         btn_Them = findViewById(R.id.btn_Them);
-//        btn_chooseImage = findViewById(R.id.btn_chooseImage);
+
     }
 
     public void setEvent() {
@@ -87,12 +87,11 @@ public class InsertXeActivity extends AppCompatActivity {
         btn_Them.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (et_maXe.length() > 0 || et_tenXe.length() > 0 || et_namSX.length() > 0 || et_maTX.length() > 0) {
+                if (et_maXe.length() > 0 && et_tenXe.length() > 0 && et_namSX.length() > 0 && et_maTX.length() > 0) {
                     Xe xe = getXe();
-                    if(lib.checkPrimaryKeyXe(xe.getMaXe(), data) == 1) {
+                    if (lib.checkPrimaryKeyXe(xe.getMaXe(), data) == 1) {
                         Snackbar.make(v, "Mã xe trùng!", Snackbar.LENGTH_SHORT).setAction(null, null).show();
-                    }
-                    else {
+                    } else {
                         insert(xe);
                         isSave = true;
                         Snackbar.make(v, "Thêm thành công!", Snackbar.LENGTH_SHORT).setAction(null, null).show();
@@ -131,25 +130,27 @@ public class InsertXeActivity extends AppCompatActivity {
         XeDatabase db = new XeDatabase(this);
         db.insert(xe);
     }
-    public void openGallerie(View objectView){
-            Intent intentImg = new Intent(Intent.ACTION_GET_CONTENT);
-            intentImg.setType("image/*");
-            startActivityForResult(intentImg, 100);
-        }
-        protected void onActivityResult(int requestCode, int resultCode, Intent data){
-            super.onActivityResult(requestCode, resultCode, data);
-            if(resultCode == RESULT_OK && requestCode == 100){
-                Uri uri = data.getData();
-                try {
-                    InputStream inputStream = getContentResolver().openInputStream(uri);
-                    Bitmap decodeStream = BitmapFactory.decodeStream(inputStream);
-                    btn_choose_image.setImageBitmap(decodeStream);
-                    Log.e("xxx",""+btn_choose_image);
-                } catch (FileNotFoundException e) {
-                    Log.e("ex", e.getMessage());
-                }
 
+    public void openGallerie(View objectView) {
+        Intent intentImg = new Intent(Intent.ACTION_GET_CONTENT);
+        intentImg.setType("image/*");
+        startActivityForResult(intentImg, 100);
+    }
+
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK && requestCode == 100) {
+            Uri uri = data.getData();
+            try {
+                InputStream inputStream = getContentResolver().openInputStream(uri);
+                Bitmap decodeStream = BitmapFactory.decodeStream(inputStream);
+                btn_choose_image.setImageBitmap(decodeStream);
+                Log.e("xxx", "" + btn_choose_image);
+            } catch (FileNotFoundException e) {
+                Log.e("ex", e.getMessage());
             }
+
+        }
     }
 
     public void loadData() {
@@ -157,6 +158,7 @@ public class InsertXeActivity extends AppCompatActivity {
         data.clear();
         db.getXe(data);
     }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();

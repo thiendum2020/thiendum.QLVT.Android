@@ -56,7 +56,6 @@ public class XeAdapter extends ArrayAdapter<Xe> {
             LayoutInflater inflater = ((Activity)context).getLayoutInflater();
             row = inflater.inflate(R.layout.qlxe_list, parent, false);
 
-            //holder.imgDelete = row.findViewById(R.id.imgDelete);
             holder.tv_maXe = row.findViewById(R.id.ma_xe);
             holder.tv_tenXe = row.findViewById(R.id.ten_xe);
             holder.img_xe = row.findViewById(R.id.img_xe);

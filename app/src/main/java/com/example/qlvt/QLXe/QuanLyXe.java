@@ -262,7 +262,10 @@ public class QuanLyXe extends AppCompatActivity implements NavigationView.OnNavi
 
     public void delete(String maXe) {
         XeDatabase db = new XeDatabase(this);
+        data.clear();
         db.delete(maXe);
+        db.getXe(data);
+        adapter.notifyDataSetChanged();
     }
 
 }
