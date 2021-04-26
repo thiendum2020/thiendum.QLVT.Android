@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.qlvt">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QLVT">
+        <activity android:name=".Dashboard">
+
+        </activity>
+        <activity
+            android:name=".THONGKE.ThongKeActivity"
+            android:label="THỐNG KÊ" />
+        <activity
+            android:name=".THONGKE.ThongKeXeActivity"
+            android:label="THỐNG KÊ XE" />
+        <activity
+            android:name=".THONGKE.ThongKeTuyenActivity"
+            android:label="THỐNG KẾ TUYẾN" />
+        <activity
+            android:name=".QLTuyen.InsertTuyenActivity"
+            android:label="QUẢN LÝ TUYẾN - INSERT" />
+        <activity
+            android:name=".QLTuyen.EditTuyenActivity"
+            android:label="QUẢN LÝ TUYẾN - EDIT" />
+        <activity
+            android:name=".QLTuyen.QuanLyTuyen"
+            android:label="QUẢN LÝ TUYẾN" />
+        <activity
+            android:name=".QLTaiXe.InsertTaiXeActivity"
+            android:label="QUẢN LÝ TÀI XẾ - INSERT" />
+        <activity
+            android:name=".QLTaiXe.EditTaiXeActivity"
+            android:label="QUẢN LÝ TÀI XẾ - EDIT" />
+        <activity
+            android:name=".QLTaiXe.QuanLyTaiXe"
+            android:label="QUẢN LÝ TÀI XẾ" />
+        <activity
+            android:name=".QLXe.EditXeActivity"
+            android:label="QUẢN LÝ XE - EDIT" />
+        <activity
+            android:name=".QLXe.InsertXeActivity"
+            android:label="QUẢN LÝ XE - INSERT" />
+        <activity
+            android:name=".QLXe.QuanLyXe"
+            android:label="QUẢN LÝ XE" />
+        <activity
+            android:name=".QLTinh.EditTinhActivity"
+            android:label="QUẢN LÝ TỈNH - EDIT" />
+        <activity
+            android:name=".QLTinh.InsertTinhActivity"
+            android:label="QUẢN LÝ TỈNH - INSERT" />
+        <activity
+            android:name=".QLTinh.QuanLyTinh"
+            android:label="QUẢN LÝ TỈNH" />
+        <activity
+            android:name=".QLPhanCong.EditPhanCongActivity"
+            android:label="QUẢN LÝ PHÂN CÔNG - EDIT" />
+        <activity
+            android:name=".QLPhanCong.InsertPhanCongActivity"
+            android:label="QUẢN LÝ PHÂN CÔNG - INSERT" />
+        <activity
+            android:name=".QLPhanCong.QuanLyPhanCong"
+            android:label="QUẢN LÝ PHÂN CÔNG" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
