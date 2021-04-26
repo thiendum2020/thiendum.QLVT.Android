@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".THONGKE.ThongKeActivity">
+
+    <Button
+        android:id="@+id/thongke_xe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:text="XE"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/thongke_tuyen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:text="TUYẾN"
+        android:textSize="20sp" />
+</LinearLayout>
