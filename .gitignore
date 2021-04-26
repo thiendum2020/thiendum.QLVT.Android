@@ -13,3 +13,11 @@
 .externalNativeBuild
 .cxx
 local.properties
+local.properties
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/gradle.xml
+.idea/caches/build_file_checksums.ser
+.idea/.name
+.gradle/6.5/fileHashes/fileHashes.lock
+.gradle/6.5/fileHashes/fileHashes.bin
