@@ -122,13 +122,13 @@ public class QuanLyPhanCong extends AppCompatActivity implements NavigationView.
                                     public void onClick(DialogInterface dialog, int which) {
                                         delete(click.getSoPhieu());
                                         Toast.makeText(QuanLyPhanCong.this, "Xóa thành công!", Toast.LENGTH_SHORT).show();
-                                        com.example.qlvt.QLPhanCong.Utils.delay(secs, new com.example.qlvt.QLPhanCong.Utils.DelayCallback() {
-                                            @Override
-                                            public void afterDelay() {
-                                                Intent intent = new Intent(QuanLyPhanCong.this, QuanLyPhanCong.class);
-                                                startActivity(intent);
-                                            }
-                                        });
+//                                        com.example.qlvt.QLPhanCong.Utils.delay(secs, new com.example.qlvt.QLPhanCong.Utils.DelayCallback() {
+//                                            @Override
+//                                            public void afterDelay() {
+//                                                Intent intent = new Intent(QuanLyPhanCong.this, QuanLyPhanCong.class);
+//                                                startActivity(intent);
+//                                            }
+//                                        });
                                     }
                                 })
                                 .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
@@ -264,6 +264,9 @@ public class QuanLyPhanCong extends AppCompatActivity implements NavigationView.
 
     public void delete(String maPC) {
         PhanCongDatabase db = new PhanCongDatabase(this);
+        data.clear();
         db.delete(maPC);
+        db.getPhanCong(data);
+        adapter.notifyDataSetChanged();
     }
 }

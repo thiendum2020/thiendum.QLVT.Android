@@ -123,13 +123,13 @@ public class QuanLyTaiXe extends AppCompatActivity implements NavigationView.OnN
                                     public void onClick(DialogInterface dialog, int which) {
                                         delete(click.getMaTaiXe());
                                         Toast.makeText(QuanLyTaiXe.this, "Xóa thành công!", Toast.LENGTH_SHORT).show();
-                                        com.example.qlvt.QLTaiXe.Utils.delay(secs, new com.example.qlvt.QLTaiXe.Utils.DelayCallback() {
-                                            @Override
-                                            public void afterDelay() {
-                                                Intent intent = new Intent(QuanLyTaiXe.this, QuanLyTaiXe.class);
-                                                startActivity(intent);
-                                            }
-                                        });
+//                                        com.example.qlvt.QLTaiXe.Utils.delay(secs, new com.example.qlvt.QLTaiXe.Utils.DelayCallback() {
+//                                            @Override
+//                                            public void afterDelay() {
+//                                                Intent intent = new Intent(QuanLyTaiXe.this, QuanLyTaiXe.class);
+//                                                startActivity(intent);
+//                                            }
+//                                        });
                                     }
                                 })
                                 .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
@@ -266,6 +266,9 @@ public class QuanLyTaiXe extends AppCompatActivity implements NavigationView.OnN
 
     public void delete(String maTX) {
         TaiXeDatabase db = new TaiXeDatabase(this);
+        data.clear();
         db.delete(maTX);
+        db.getTaiXe(data);
+        adapter.notifyDataSetChanged();
     }
 }

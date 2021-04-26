@@ -117,13 +117,13 @@ public class QuanLyTuyen extends AppCompatActivity implements NavigationView.OnN
                                     public void onClick(DialogInterface dialog, int which) {
                                         delete(click.getMaTuyen());
                                         Toast.makeText(QuanLyTuyen.this, "Xóa thành công!", Toast.LENGTH_SHORT).show();
-                                        com.example.qlvt.QLTuyen.Utils.delay(secs, new com.example.qlvt.QLTuyen.Utils.DelayCallback() {
-                                            @Override
-                                            public void afterDelay() {
-                                                Intent intent = new Intent(QuanLyTuyen.this, QuanLyTuyen.class);
-                                                startActivity(intent);
-                                            }
-                                        });
+//                                        com.example.qlvt.QLTuyen.Utils.delay(secs, new com.example.qlvt.QLTuyen.Utils.DelayCallback() {
+//                                            @Override
+//                                            public void afterDelay() {
+//                                                Intent intent = new Intent(QuanLyTuyen.this, QuanLyTuyen.class);
+//                                                startActivity(intent);
+//                                            }
+//                                        });
                                     }
                                 })
                                 .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
@@ -235,7 +235,10 @@ public class QuanLyTuyen extends AppCompatActivity implements NavigationView.OnN
 
     public void delete(String maTuyen) {
         TuyenDatabase db = new TuyenDatabase(this);
+        data.clear();
         db.delete(maTuyen);
+        db.getTuyen(data);
+        adapter.notifyDataSetChanged();
     }
 
 }
