@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/QLVT.iml" filepath="$PROJECT_DIR$/.idea/modules/QLVT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/QLVT.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/QLVT.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/support-v4-r7/QLVT.support-v4-r7.iml" filepath="$PROJECT_DIR$/.idea/modules/support-v4-r7/QLVT.support-v4-r7.iml" />
+    </modules>
+  </component>
+</project>

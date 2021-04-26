@@ -1,0 +1,4 @@
+#Sun Apr 25 01:44:15 ICT 2021
+base.0=D\:\\HK 8\\Phat trien ung dung di dong\\GIUAKY\\QLVT\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

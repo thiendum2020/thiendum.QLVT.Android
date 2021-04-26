@@ -1,0 +1,159 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.qlvt"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:5:5-76:19
+12        android:allowBackup="true"
+12-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\b234a824af7fd98a5c54fc0522824a91\core-1.3.1\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:icon="@android:drawable/ic_menu_sort_by_size"
+15-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:7:9-62
+16        android:label="@string/app_name"
+16-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:8:9-41
+17        android:roundIcon="@mipmap/ic_launcher_round"
+17-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:9:9-54
+18        android:supportsRtl="true"
+18-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:10:9-35
+19        android:testOnly="true"
+20        android:theme="@style/Theme.QLVT" >
+20-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:11:9-42
+21        <activity android:name="com.example.qlvt.Dashboard" >
+21-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:12:9-14:20
+21-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:12:19-44
+22        </activity>
+23        <activity
+23-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:15:9-17:40
+24            android:name="com.example.qlvt.THONGKE.ThongKeActivity"
+24-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:16:13-52
+25            android:label="THỐNG KÊ" />
+25-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:17:13-37
+26        <activity
+26-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:18:9-20:43
+27            android:name="com.example.qlvt.THONGKE.ThongKeXeActivity"
+27-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:19:13-54
+28            android:label="THỐNG KÊ XE" />
+28-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:20:13-40
+29        <activity
+29-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:21:9-23:46
+30            android:name="com.example.qlvt.THONGKE.ThongKeTuyenActivity"
+30-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:22:13-57
+31            android:label="THỐNG KẾ TUYẾN" />
+31-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:23:13-43
+32        <activity
+32-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:24:9-26:54
+33            android:name="com.example.qlvt.QLTuyen.InsertTuyenActivity"
+33-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:25:13-56
+34            android:label="QUẢN LÝ TUYẾN - INSERT" />
+34-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:26:13-51
+35        <activity
+35-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:27:9-29:52
+36            android:name="com.example.qlvt.QLTuyen.EditTuyenActivity"
+36-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:28:13-54
+37            android:label="QUẢN LÝ TUYẾN - EDIT" />
+37-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:29:13-49
+38        <activity
+38-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:30:9-32:45
+39            android:name="com.example.qlvt.QLTuyen.QuanLyTuyen"
+39-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:31:13-48
+40            android:label="QUẢN LÝ TUYẾN" />
+40-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:32:13-42
+41        <activity
+41-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:33:9-35:55
+42            android:name="com.example.qlvt.QLTaiXe.InsertTaiXeActivity"
+42-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:34:13-56
+43            android:label="QUẢN LÝ TÀI XẾ - INSERT" />
+43-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:35:13-52
+44        <activity
+44-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:36:9-38:53
+45            android:name="com.example.qlvt.QLTaiXe.EditTaiXeActivity"
+45-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:37:13-54
+46            android:label="QUẢN LÝ TÀI XẾ - EDIT" />
+46-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:38:13-50
+47        <activity
+47-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:39:9-41:46
+48            android:name="com.example.qlvt.QLTaiXe.QuanLyTaiXe"
+48-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:40:13-48
+49            android:label="QUẢN LÝ TÀI XẾ" />
+49-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:41:13-43
+50        <activity
+50-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:42:9-44:49
+51            android:name="com.example.qlvt.QLXe.EditXeActivity"
+51-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:43:13-48
+52            android:label="QUẢN LÝ XE - EDIT" />
+52-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:44:13-46
+53        <activity
+53-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:45:9-47:51
+54            android:name="com.example.qlvt.QLXe.InsertXeActivity"
+54-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:46:13-50
+55            android:label="QUẢN LÝ XE - INSERT" />
+55-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:47:13-48
+56        <activity
+56-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:48:9-50:42
+57            android:name="com.example.qlvt.QLXe.QuanLyXe"
+57-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:49:13-42
+58            android:label="QUẢN LÝ XE" />
+58-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:50:13-39
+59        <activity
+59-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:51:9-53:51
+60            android:name="com.example.qlvt.QLTinh.EditTinhActivity"
+60-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:52:13-52
+61            android:label="QUẢN LÝ TỈNH - EDIT" />
+61-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:53:13-48
+62        <activity
+62-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:54:9-56:53
+63            android:name="com.example.qlvt.QLTinh.InsertTinhActivity"
+63-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:55:13-54
+64            android:label="QUẢN LÝ TỈNH - INSERT" />
+64-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:56:13-50
+65        <activity
+65-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:57:9-59:44
+66            android:name="com.example.qlvt.QLTinh.QuanLyTinh"
+66-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:58:13-46
+67            android:label="QUẢN LÝ TỈNH" />
+67-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:59:13-41
+68        <activity
+68-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:60:9-62:56
+69            android:name="com.example.qlvt.QLPhanCong.EditPhanCongActivity"
+69-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:61:13-60
+70            android:label="QUẢN LÝ PHÂN CÔNG - EDIT" />
+70-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:62:13-53
+71        <activity
+71-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:63:9-65:58
+72            android:name="com.example.qlvt.QLPhanCong.InsertPhanCongActivity"
+72-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:64:13-62
+73            android:label="QUẢN LÝ PHÂN CÔNG - INSERT" />
+73-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:65:13-55
+74        <activity
+74-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:66:9-68:49
+75            android:name="com.example.qlvt.QLPhanCong.QuanLyPhanCong"
+75-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:67:13-54
+76            android:label="QUẢN LÝ PHÂN CÔNG" />
+76-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:68:13-46
+77        <activity android:name="com.example.qlvt.MainActivity" >
+77-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:69:9-75:20
+77-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:69:19-47
+78            <intent-filter>
+78-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:70:13-74:29
+79                <action android:name="android.intent.action.MAIN" />
+79-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:71:17-69
+79-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:71:25-66
+80
+81                <category android:name="android.intent.category.LAUNCHER" />
+81-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:73:17-77
+81-->D:\HK 8\Phat trien ung dung di dong\GIUAKY\QLVT\app\src\main\AndroidManifest.xml:73:27-74
+82            </intent-filter>
+83        </activity>
+84    </application>
+85
+86</manifest>
