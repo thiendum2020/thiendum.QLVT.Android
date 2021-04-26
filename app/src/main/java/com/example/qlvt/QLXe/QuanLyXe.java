@@ -125,13 +125,13 @@ public class QuanLyXe extends AppCompatActivity implements NavigationView.OnNavi
                                     public void onClick(DialogInterface dialog, int which) {
                                         delete(click.getMaXe());
                                         Toast.makeText(QuanLyXe.this, "Xóa thành công!", Toast.LENGTH_SHORT).show();
-                                        com.example.qlvt.QLXe.Utils.delay(secs, new com.example.qlvt.QLXe.Utils.DelayCallback() {
-                                            @Override
-                                            public void afterDelay() {
-                                                Intent intent = new Intent(QuanLyXe.this, QuanLyXe.class);
-                                                startActivity(intent);
-                                            }
-                                        });
+//                                        com.example.qlvt.QLXe.Utils.delay(secs, new com.example.qlvt.QLXe.Utils.DelayCallback() {
+//                                            @Override
+//                                            public void afterDelay() {
+//                                                Intent intent = new Intent(QuanLyXe.this, QuanLyXe.class);
+//                                                startActivity(intent);
+//                                            }
+//                                        });
                                     }
                                 })
                                 .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
@@ -262,7 +262,10 @@ public class QuanLyXe extends AppCompatActivity implements NavigationView.OnNavi
 
     public void delete(String maXe) {
         XeDatabase db = new XeDatabase(this);
+        data.clear();
         db.delete(maXe);
+        db.getXe(data);
+        adapter.notifyDataSetChanged();
     }
 
 }
