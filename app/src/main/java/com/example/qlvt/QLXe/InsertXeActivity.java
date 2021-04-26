@@ -87,7 +87,7 @@ public class InsertXeActivity extends AppCompatActivity {
         btn_Them.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (et_maXe.length() > 0 || et_tenXe.length() > 0 || et_namSX.length() > 0 || et_maTX.length() > 0) {
+                if (et_maXe.length() > 0 && et_tenXe.length() > 0 && et_namSX.length() > 0 && et_maTX.length() > 0) {
                     Xe xe = getXe();
                     if(lib.checkPrimaryKeyXe(xe.getMaXe(), data) == 1) {
                         Snackbar.make(v, "Mã xe trùng!", Snackbar.LENGTH_SHORT).setAction(null, null).show();
